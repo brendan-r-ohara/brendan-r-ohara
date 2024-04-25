@@ -4,7 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brendan O'Hara - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Garamond, serif; /* Set font to Garamond */
+            color: black; /* Set text color to black */
+            background-color: white; /* Set background color to white */
+        }
+
+        header {
+            background-color: forestgreen; /* Set header background color to forest green */
+            color: white; /* Set header text color to white */
+            padding: 10px 0; /* Add padding to header */
+        }
+
+        .experience {
+            margin-bottom: 20px;
+        }
+
+        .experience h3 {
+            color: forestgreen; /* Set heading color to forest green */
+            font-size: 20px; /* Set heading font size */
+            margin-bottom: 10px; /* Add spacing between heading and paragraph */
+        }
+
+        .experience p {
+            color: black; /* Set paragraph color to black */
+            font-size: 16px; /* Set paragraph font size */
+            line-height: 1.5; /* Increase line height for readability */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -28,7 +56,19 @@
     
     <section id="experience">
         <h2>Experience</h2>
-        <p>This is where you can showcase your work, research, and volunteer experience.</p>
+        <div class="experience">
+            <h3>Medical Billing Experience:</h3>
+            <p>
+                As a remote medical biller with Guardian Angel Home Health LLC, I adeptly navigated the intricacies of medical coding and information input using Axxess software. Over two years, my meticulous attention to detail ensured accurate records and streamlined billing processes, contributing to the timely reimbursement for crucial healthcare services.
+            </p>
+        </div>
+
+        <div class="experience">
+            <h3>Environmental Justice Internship:</h3>
+            <p>
+                In my role as an Environmental Justice Intern at Our Climate, Florida, I delved into the intersection of environmental policy and scientific research. Working remotely, I conducted thorough analyses and synthesized complex data to inform our team's initiatives. Through my dedication and independent research, I contributed valuable insights that empowered advocacy efforts towards environmental justice in Florida communities.
+            </p>
+        </div>
     </section>
     
     <section id="education">
@@ -52,7 +92,7 @@
     </section>
     
     <footer>
-        <p>&copy; 2024 Brendan R O'Hara</p>
+        <p>&copy; 2024 Brendan O'Hara</p>
     </footer>
 </body>
 </html>
