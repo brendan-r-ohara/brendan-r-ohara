@@ -4,17 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brendan O'Hara - Portfolio</title>
+    <meta name="description" content="Portfolio of Brendan O'Hara, showcasing experience in medical billing, environmental justice, and more.">
     <style>
         body {
-            font-family: Garamond, serif; /* Set font to Garamond */
-            color: black; /* Set text color to black */
-            background-color: white; /* Set background color to white */
+            font-family: Garamond, serif;
+            color: black;
+            background-color: white;
+            margin: 0;
+            padding: 0;
         }
 
         header {
-            background-color: forestgreen; /* Set header background color to forest green */
-            color: white; /* Set header text color to white */
-            padding: 10px 0; /* Add padding to header */
+            background-color: forestgreen;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
         }
 
         .experience {
@@ -22,15 +53,41 @@
         }
 
         .experience h3 {
-            color: forestgreen; /* Set heading color to forest green */
-            font-size: 20px; /* Set heading font size */
-            margin-bottom: 10px; /* Add spacing between heading and paragraph */
+            color: forestgreen;
+            font-size: 20px;
+            margin-bottom: 10px;
         }
 
         .experience p {
-            color: black; /* Set paragraph color to black */
-            font-size: 16px; /* Set paragraph font size */
-            line-height: 1.5; /* Increase line height for readability */
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: forestgreen;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hamburger {
+                display: block;
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
     </style>
 </head>
@@ -39,60 +96,28 @@
         <h1>Brendan O'Hara</h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#personal">Personal</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="personal.html">Personal</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    
+
     <section id="home">
         <h2>Home</h2>
         <p>Welcome to my portfolio website!</p>
     </section>
-    
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="experience">
-            <h3>Medical Billing Experience:</h3>
-            <p>
-                As a remote medical biller with Guardian Angel Home Health LLC, I adeptly navigated the intricacies of medical coding and information input using Axxess software. Over two years, my meticulous attention to detail ensured accurate records and streamlined billing processes, contributing to the timely reimbursement for crucial healthcare services.
-            </p>
-        </div>
 
-        <div class="experience">
-            <h3>Environmental Justice Internship:</h3>
-            <p>
-                In my role as an Environmental Justice Intern at Our Climate, Florida, I delved into the intersection of environmental policy and scientific research. Working remotely, I conducted thorough analyses and synthesized complex data to inform our team's initiatives. Through my dedication and independent research, I contributed valuable insights that empowered advocacy efforts towards environmental justice in Florida communities.
-            </p>
-        </div>
-    </section>
-    
-    <section id="education">
-        <h2>Education</h2>
-        <p>Here you can list your educational background and relevant coursework.</p>
-    </section>
-    
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <p>Showcase your resume, business card, cover letter, reference list, etc.</p>
-    </section>
-    
-    <section id="personal">
-        <h2>Personal</h2>
-        <p>Add a brief description about yourself and maybe a photo or two.</p>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Include your contact information, such as email address and LinkedIn profile.</p>
-    </section>
-    
     <footer>
         <p>&copy; 2024 Brendan O'Hara</p>
+        <p>Contact: <a href="mailto:brendan@example.com">brendan@example.com</a></p>
+        <p>
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+            <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </p>
     </footer>
 </body>
 </html>
