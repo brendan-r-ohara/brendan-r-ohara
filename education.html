@@ -8,14 +8,20 @@
     <style>
         body {
             font-family: Garamond, serif;
-            color: black;
-            background-color: white; /* Consistent background color */
+            color: white; /* Change text color to white for contrast */
+            background: url('assets/images/20230803_153521.png') no-repeat center center; /* Set the background image */
+            background-size: cover; /* Cover the entire background */
             margin: 0;
             padding: 0;
         }
 
+        .overlay {
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for contrast */
+            padding: 20px; /* Consistent padding */
+        }
+
         header {
-            background-color: forestgreen; /* Consistent with other sections */
+            background-color: forestgreen;
             color: white;
             padding: 10px 0;
             text-align: center;
@@ -23,7 +29,7 @@
 
         nav {
             display: flex;
-            justify-content: center; /* Aligns navigation in the center */
+            justify-content: center; /* Center navigation */
         }
 
         nav ul {
@@ -39,60 +45,45 @@
 
         nav a {
             color: white;
-            text-decoration: none; /* Consistent styling for links */
+            text-decoration: none;
             font-size: 18px;
         }
 
         section {
-            padding: 20px; /* Consistent padding */
+            padding: 20px;
         }
 
         .education-entry, .certifications-entry {
-            margin-bottom: 20px; /* Space between entries */
+            margin-bottom: 20px; /* Space between sections */
         }
 
         .education-entry h3, .certifications-entry h3 {
-            color: forestgreen; /* Maintain consistent color */
-            font-size: 20px; /* Heading font size */
+            color: white; /* Maintain legibility on blue background */
+            font-size: 20px;
         }
 
         .education-entry p, .certifications-entry p {
             font-size: 16px;
-            line-height: 1.5; /* Improved readability */
-        }
-
-        .right-image {
-            float: right; /* Position the image on the right */
-            margin-left: 20px; /* Margin for spacing */
-            margin-bottom: 20px; /* Bottom margin for spacing */
-            max-width: 400px; /* Increase the image size */
-            border-radius: 10px; /* Consistent border radius */
-            object-fit: cover; /* Maintain aspect ratio */
+            line-height: 1.5; /* Ensure readability */
+            color: white; /* Text should be white for contrast */
         }
 
         footer {
-            background-color: forestgreen; /* Consistent footer color */
+            background-color: forestgreen;
             color: white;
             text-align: center;
-            padding: 10px 0; /* Padding for footer */
+            padding: 10px 0;
         }
 
         footer a {
             color: white; 
-            text-decoration: none; /* Consistent link styling */
+            text-decoration: none;
         }
 
         @media (max-width: 768px) {
             nav ul {
                 flex-direction: column; 
-                text-align: center; /* Responsive design for smaller screens */
-            }
-
-            .right-image {
-                float: none; /* Reposition the image for smaller screens */
-                display: block; 
-                margin: 0 auto; /* Center the image on smaller screens */
-                max-width: 100%; /* Adjust the image size on smaller screens */
+                text-align: center;
             }
         }
 
@@ -116,38 +107,39 @@
         </nav>
     </header>
 
-    <section id="education">
-        <h2>Education</h2>
-        
-        <img src="assets/images/20230803_153521.png" class="right-image" alt="Environmental image" /> 
+    <!-- Overlay to ensure text readability -->
+    <div class="overlay">
+        <section id="education">
+            <h2>Education</h2>
 
-        <p>
-            As a student pursuing a Bachelor of Science in Environmental Science with a specialization in Environmental Policy at the University of South Florida, I have engaged in a diverse range of coursework designed to equip me with the knowledge and skills necessary to address pressing environmental challenges. In addition to foundational courses in Environmental Law and Policy Analysis, I have delved into topics such as Sustainable Development and Climate Science. These experiences have deepened my understanding of the complex interactions between human activities and the environment, fueling my passion for advocating for evidence-based policy solutions. Combined with my previous academic achievements, including an Associate of Arts in Biology from St. Petersburg College, I am well-prepared to contribute meaningfully to the field of environmental science and policy.
-        </p>
+            <p>
+                As a student pursuing a Bachelor of Science in Environmental Science with a specialization in Environmental Policy at the University of South Florida, I have engaged in a diverse range of coursework designed to equip me with the knowledge and skills necessary to address pressing environmental challenges. In addition to foundational courses in Environmental Law and Policy Analysis, I have delved into topics such as Sustainable Development and Climate Science. These experiences have deepened my understanding of the complex interactions between human activities and the environment, fueling my passion for advocating for evidence-based policy solutions. Combined with my previous academic achievements, including an Associate of Arts in Biology from St. Petersburg College, I am well-prepared to contribute meaningfully to the field of environmental science and policy.
+            </p>
 
-        <div class="education-entry">
-            <h3>University of South Florida</h3>
-            <p><strong>Bachelor of Science in Environmental Science</strong></p>
-            <p>Specialization: Environmental Policy</p>
-            <p>Expected Graduation: May 2024</p>
-            <p>Relevant Coursework: Environmental Law, Policy Analysis, Sustainable Development, Climate Science</p>
-        </div>
-        
-        <div class="education-entry">
-            <h3>St. Petersburg College</h3>
-            <p><strong>Associate of Arts in Biology</strong></p>
-            <p>Graduated: December 2019 (With Honors)</p>
-            <p>Relevant Coursework: Biology, Chemistry, Ethics, Philosophy</p>
-        </div>
+            <div class="education-entry">
+                <h3>University of South Florida</h3>
+                <p><strong>Bachelor of Science in Environmental Science</strong></p>
+                <p>Specialization: Environmental Policy</p>
+                <p>Expected Graduation: May 2024</p>
+                <p>Relevant Coursework: Environmental Law, Policy Analysis, Sustainable Development, Climate Science</p>
+            </div>
+            
+            <div class="education-entry">
+                <h3>St. Petersburg College</h3>
+                <p><strong>Associate of Arts in Biology</strong></p>
+                <p>Graduated: December 2019 (With Honors)</p>
+                <p>Relevant Coursework: Biology, Chemistry, Ethics, Philosophy</p>
+            </div>
 
-        <h2>Certifications</h2>
-        <div class="certifications-entry">
-            <h3>PADI Open Water Certification</h3>
-            <p>Issuing Organization: Professional Association of Diving Instructors (PADI)</p>
-            <p>Date of Certification: June 11, 2015</p>
-            <p>Description: Achieved Open Water certification, demonstrating competency in basic scuba diving skills and knowledge, making me proficient for marine or aquatic fieldwork.</p>
-        </div>
-    </section>
+            <h2>Certifications</h2>
+            <div class="certifications-entry">
+                <h3>PADI Open Water Certification</h3>
+                <p>Issuing Organization: Professional Association of Diving Instructors (PADI)</p>
+                <p>Date of Certification: June 11, 2015</p>
+                <p>Description: Achieved Open Water certification, demonstrating competency in basic scuba diving skills and knowledge, making me proficient for marine or aquatic fieldwork.</p>
+            </div>
+        </section>
+    </div>
 
     <footer>
         <p>&copy; 2024 Brendan O'Hara</p>
@@ -158,12 +150,3 @@
     </footer>
 </body>
 </html
-``
-
-### Key Changes
-- **Consistent Background Color**: The background is set to white to avoid unwanted color changes.
-- **Increased Image Size**: The `max-width` is set to 400px, providing more space for the image while keeping its aspect ratio intact with `object-fit: cover`.
-- **Responsive Design**: The CSS includes adjustments for smaller screens to ensure the image remains centered without overlapping the text.
-- **Proper Margins and Padding**: Consistent spacing to maintain a clean and readable layout.
-
-With these changes, the code should provide a better layout with a larger, properly positioned image, avoiding any unexpected color changes or text overlaps. If you need further adjustments or assistance, I'm here to help.
