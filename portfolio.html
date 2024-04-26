@@ -4,7 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Brendan O'Hara</title>
-    <!-- Additional CSS styling and other meta tags -->
+    <meta name="description" content="Portfolio of Brendan O'Hara, showcasing resume, business card, cover letter, and reference list.">
+    <style>
+        body {
+            font-family: Garamond, serif; /* Same font family as other pages */
+            color: black; /* Text color consistent with other pages */
+            background-color: white; /* Background color consistent with other pages */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: forestgreen; /* Consistent with other pages */
+            color: white;
+            padding: 10px 0;
+            text-align: center; /* Aligns with your other pages */
+        }
+
+        nav {
+            display: flex;
+            justify-content: center; /* Consistent layout for navigation */
+        }
+
+        nav ul {
+            list-style: none; /* Consistent styling for list */
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px; /* Consistent spacing for navigation items */
+        }
+
+        nav a {
+            color: white; /* Navigation links in white, consistent with other pages */
+            text-decoration: none; /* No underline on links */
+            font-size: 18px; /* Same font size for navigation links */
+        }
+
+        section {
+            padding: 20px; /* Consistent section padding */
+        }
+
+        footer {
+            background-color: forestgreen; /* Consistent footer background */
+            color: white;
+            text-align: center;
+            padding: 10px 0; /* Consistent padding for footer */
+        }
+
+        footer a {
+            color: white; /* Consistent footer link color */
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column; /* Responsive layout for small screens */
+                text-align: center;
+            }
+
+            .hamburger {
+                display: block; /* Display hamburger menu on smaller screens */
+            }
+        }
+
+        html {
+            scroll-behavior: smooth; /* Consistent smooth scrolling */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -23,34 +92,17 @@
 
     <section id="portfolio">
         <h2>Portfolio</h2>
-        
-        <!-- Resume Link -->
         <h3>Resume</h3>
-        <p>
-            You can download my resume here. 
-            <a href="assets/documents/OHaraResumeFinalDraft.docx" download>Download Resume</a>
-        </p>
-        
-        <!-- Business Card Link -->
+        <p><a href="assets/documents/OHaraResumeFinalDraft.docx" download>Download Resume</a></p>
+
         <h3>Business Card</h3>
-        <p>
-            Here's my business card. 
-            <a href="assets/images/OHaraBusinessCard.png" download>Download Business Card</a>
-        </p>
-        
-        <!-- Cover Letter Link -->
+        <p><a href="assets/images/OHaraBusinessCard.png" download>Download Business Card</a></p>
+
         <h3>Cover Letter</h3>
-        <p>
-            This is an example cover letter. 
-            <a href="assets/documents/OHaraAXACoverLetterFinal.docx" download>Download Cover Letter</a>
-        </p>
-        
-        <!-- Reference List Link -->
+        <p><a href="assets/documents/OHaraAXACoverLetterFinal.docx" download>Download Cover Letter</a></p>
+
         <h3>Reference List</h3>
-        <p>
-            My reference list is available here. 
-            <a href="assets/documents/OHaraM3Assignment.docx" download>Download Reference List</a>
-        </p>
+        <p><a href="assets/documents/OHaraM3Assignment.docx" download>Download Reference List</a></p>
     </section>
 
     <footer>
