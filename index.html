@@ -43,26 +43,6 @@
             font-size: 18px;
         }
 
-        .hamburger {
-            display: none;
-            cursor: pointer;
-        }
-
-        .experience {
-            margin-bottom: 20px;
-        }
-
-        .experience h3 {
-            color: forestgreen;
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-
-        .experience p {
-            font-size: 16px;
-            line-height: 1.5;
-        }
-
         footer {
             background-color: forestgreen;
             color: white;
@@ -73,6 +53,16 @@
         footer a {
             color: white;
             text-decoration: none;
+        }
+
+        .banner {
+            text-align: center; /* Center the image */
+            margin-top: 20px; /* Add some space before the banner */
+        }
+
+        .banner img {
+            max-width: 100%; /* Ensure the image doesn't overflow */
+            height: auto; /* Maintain aspect ratio */
         }
 
         @media (max-width: 768px) {
@@ -113,11 +103,14 @@
 
     <footer>
         <p>&copy; 2024 Brendan O'Hara</p>
-        <p>Contact: <a href="mailto:brendan@example.com">brendan@example.com</a></p>
+        <p>Contact: brendan dot r dot ohara at gmail.com</p>
         <p>
-            <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
-            <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/brendan-r-ohara/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </p>
+        <!-- Add the banner image here -->
+        <div class="banner">
+            <img src="assets/images/20231213_173258.png" alt="Banner image" />
+        </div>
     </footer>
 </body>
 </html>
