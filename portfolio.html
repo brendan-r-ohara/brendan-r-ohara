@@ -9,7 +9,7 @@
         body {
             font-family: Garamond, serif;
             color: black;
-            background-color: white; /* Default background color */
+            background-color: white; /* Fallback background color */
             margin: 0;
             padding: 0;
         }
@@ -43,17 +43,12 @@
             font-size: 18px;
         }
 
-        section {
-            padding: 20px;
-        }
-
         .portfolio-section {
-            background: white; /* Fallback color */
-            background-image: url('assets/images/20230904_172929.png'); /* Path to the specified image */
+            background-image: url('assets/images/20230904_172929.png'); /* Background image */
             background-repeat: no-repeat;
-            background-position: center center; /* Position the image at the center */
-            background-size: cover; /* Ensures the image covers the entire section */
-            padding: 20px; /* Padding for consistency */
+            background-position: center center;
+            background-size: cover; /* Ensures the image covers the section */
+            padding: 20px; /* Padding to ensure text doesn't overlap */
         }
 
         .portfolio-section h3 {
@@ -81,10 +76,6 @@
             nav ul {
                 flex-direction: column; 
                 text-align: center;
-            }
-
-            .hamburger {
-                display: block;
             }
         }
 
