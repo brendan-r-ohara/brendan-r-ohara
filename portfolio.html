@@ -9,7 +9,7 @@
         body {
             font-family: Garamond, serif;
             color: black;
-            background-color: white;
+            background-color: white; /* Fallback background color */
             margin: 0;
             padding: 0;
         }
@@ -46,19 +46,19 @@
         .portfolio-section {
             background-image: url('assets/images/20230904_172929.png'); /* Background image */
             background-repeat: no-repeat;
-            background-position: center center;
-            background-size: cover; /* Ensures the image covers the section and extends beyond the footer */
-            min-height: 100vh; /* Ensures the background extends to the bottom */
-            padding: 20px; /* Padding for spacing */
+            background-position: center center; /* Position the image at the center */
+            background-size: cover; /* Ensures the image covers the entire section */
+            min-height: 100vh; /* Ensures the image extends to the bottom of the page */
+            padding: 20px; /* Padding to avoid text overlap */
         }
 
         .text-box {
-            background-color: #556B2F; /* Pastel navy for the text background */
-            padding: 20px; /* Padding around the text */
-            max-width: 60%; /* Limits the width of the text box */
-            border-radius: 10px; /* Rounded corners */
-            margin-left: auto; /* Center the box on the left side */
-            color: white; /* White text for contrast */
+            background-color: #5A79BA; /* Set the rectangle color */
+            padding: 20px;
+            max-width: 60%; 
+            border-radius: 10px;
+            margin-left: auto; /* Aligns the text box to the left */
+            color: white; /* Text color for contrast */
         }
 
         .text-box h3 {
@@ -87,6 +87,10 @@
                 flex-direction: column; 
                 text-align: center;
             }
+
+            .hamburger {
+                display: block;
+            }
         }
 
         html {
@@ -110,8 +114,11 @@
     </header>
 
     <section class="portfolio-section">
-        <!-- Text Box for Content -->
         <div class="text-box">
+            <!-- Short Blurb at the Top -->
+            <p>Welcome to my living portfolio. Here, you'll find a collection of my professional documents, including my resume, business card, cover letter, and reference list. Feel free to explore and learn more about my experiences and achievements.</p>
+            
+            <!-- Portfolio Content -->
             <h2>Portfolio</h2>
             <h3>Resume</h3>
             <p><a href="assets/documents/OHaraResumeFinalDraft.docx" download>Download Resume</a></p>
