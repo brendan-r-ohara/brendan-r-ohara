@@ -9,7 +9,7 @@
         body {
             font-family: Garamond, serif;
             color: black;
-            background-color: white;
+            background-color: white; /* Default background color */
             margin: 0;
             padding: 0;
         }
@@ -48,13 +48,16 @@
         }
 
         .portfolio-section {
-            background: url('assets/images/continuous_background.png') no-repeat center center;
+            background: white; /* Fallback color */
+            background-image: url('assets/images/20230904_172929.png'); /* Path to the specified image */
+            background-repeat: no-repeat;
+            background-position: center center; /* Position the image at the center */
             background-size: cover; /* Ensures the image covers the entire section */
-            padding: 20px; /* Consistent with other sections */
+            padding: 20px; /* Padding for consistency */
         }
 
         .portfolio-section h3 {
-            color: forestgreen; /* Consistent with other headings */
+            color: forestgreen; 
         }
 
         .portfolio-section p {
@@ -78,6 +81,10 @@
             nav ul {
                 flex-direction: column; 
                 text-align: center;
+            }
+
+            .hamburger {
+                display: block;
             }
         }
 
