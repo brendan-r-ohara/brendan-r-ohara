@@ -52,13 +52,22 @@
         }
 
         .education-entry h3, .certifications-entry h3 {
-            color: forestgreen; 
+            color: forestgreen;
             font-size: 20px;
         }
 
         .education-entry p, .certifications-entry p {
             font-size: 16px;
             line-height: 1.5;
+        }
+
+        /* Right-justified image with spacing to prevent text overlap */
+        .right-image {
+            float: right;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            max-width: 150px;
+            border-radius: 10px;
         }
 
         footer {
@@ -75,7 +84,7 @@
 
         @media (max-width: 768px) {
             nav ul {
-                flex-direction: column; 
+                flex-direction: column;
                 text-align: center;
             }
 
@@ -107,6 +116,8 @@
     <section id="education">
         <h2>Education</h2>
         
+        <img src="assets/images/20230803_153521.png" class="right-image" alt="Environmental image" />
+
         <p>
             As a student pursuing a Bachelor of Science in Environmental Science with a specialization in Environmental Policy at the University of South Florida, I have engaged in a diverse range of coursework designed to equip me with the knowledge and skills necessary to address pressing environmental challenges. In addition to foundational courses in Environmental Law and Policy Analysis, I have delved into topics such as Sustainable Development and Climate Science. These experiences have deepened my understanding of the complex interactions between human activities and the environment and have fueled my passion for advocating for evidence-based policy solutions. Combined with my previous academic achievements, including an Associate of Arts in Biology from St. Petersburg College, I am well-prepared to contribute meaningfully to the field of environmental science and policy.
         </p>
@@ -125,7 +136,7 @@
             <p>Graduated: December 2019 (With Honors)</p>
             <p>Relevant Coursework: Biology, Chemistry, Ethics, Philosophy</p>
         </div>
-        
+
         <h2>Certifications</h2>
         <div class="certifications-entry">
             <h3>PADI Open Water Certification</h3>
