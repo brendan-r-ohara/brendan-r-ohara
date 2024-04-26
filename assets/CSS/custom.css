@@ -1,0 +1,32 @@
+/* Override font family */
+body {
+    font-family: Garamond, serif; /* Set the primary font */
+}
+
+/* Override default header and link colors */
+header {
+    background-color: #355E3B; /* Hunter's Green background for header */
+    color: white; /* Ensure text is readable on dark background */
+}
+
+nav a {
+    color: white; /* White links for consistency */
+}
+
+footer {
+    background-color: #355E3B; /* Hunter's Green background for footer */
+    color: white; /* Ensure text contrast */
+}
+
+footer a {
+    color: white; /* White links in the footer */
+}
+
+/* Additional color overrides for various elements */
+h1, h2, h3, h4, h5, h6 {
+    color: #355E3B; /* Hunter's Green for all headings */
+}
+
+a:hover {
+    color: lightgray; /* Hover effect for links */
+}
