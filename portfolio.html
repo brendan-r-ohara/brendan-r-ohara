@@ -9,7 +9,7 @@
         body {
             font-family: Garamond, serif;
             color: black;
-            background-color: white; /* Fallback background color */
+            background-color: white;
             margin: 0;
             padding: 0;
         }
@@ -47,15 +47,25 @@
             background-image: url('assets/images/20230904_172929.png'); /* Background image */
             background-repeat: no-repeat;
             background-position: center center;
-            background-size: cover; /* Ensures the image covers the section */
-            padding: 20px; /* Padding to ensure text doesn't overlap */
+            background-size: cover; /* Ensures the image covers the section and extends beyond the footer */
+            min-height: 100vh; /* Ensures the background extends to the bottom */
+            padding: 20px; /* Padding for spacing */
         }
 
-        .portfolio-section h3 {
-            color: forestgreen; 
+        .text-box {
+            background-color: #556B2F; /* Pastel navy for the text background */
+            padding: 20px; /* Padding around the text */
+            max-width: 60%; /* Limits the width of the text box */
+            border-radius: 10px; /* Rounded corners */
+            margin-left: auto; /* Center the box on the left side */
+            color: white; /* White text for contrast */
         }
 
-        .portfolio-section p {
+        .text-box h3 {
+            color: white; 
+        }
+
+        .text-box p {
             font-size: 16px;
             line-height: 1.5;
         }
@@ -100,18 +110,21 @@
     </header>
 
     <section class="portfolio-section">
-        <h2>Portfolio</h2>
-        <h3>Resume</h3>
-        <p><a href="assets/documents/OHaraResumeFinalDraft.docx" download>Download Resume</a></p>
+        <!-- Text Box for Content -->
+        <div class="text-box">
+            <h2>Portfolio</h2>
+            <h3>Resume</h3>
+            <p><a href="assets/documents/OHaraResumeFinalDraft.docx" download>Download Resume</a></p>
 
-        <h3>Business Card</h3>
-        <p><a href="assets/images/OHaraBusinessCard.png" download>Download Business Card</a></p>
+            <h3>Business Card</h3>
+            <p><a href="assets/images/OHaraBusinessCard.png" download>Download Business Card</a></p>
 
-        <h3>Cover Letter</h3>
-        <p><a href="assets/documents/OHaraAXACoverLetterFinal.docx" download>Download Cover Letter</a></p>
+            <h3>Cover Letter</h3>
+            <p><a href="assets/documents/OHaraAXACoverLetterFinal.docx" download>Download Cover Letter</a></p>
 
-        <h3>Reference List</h3>
-        <p><a href="assets/documents/OHaraM3Assignment.docx" download>Download Reference List</a></p>
+            <h3>Reference List</h3>
+            <p><a href="assets/documents/OHaraM3Assignment.docx" download>Download Reference List</a></p>
+        </div>
     </section>
 
     <footer>
