@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experience - Brendan O'Hara</title>
+    <meta name="description" content="Professional experience of Brendan O'Hara, including medical billing and environmental justice internships.">
     <style>
         body {
             font-family: Garamond, serif;
@@ -44,8 +45,16 @@
 
         .experience {
             margin-bottom: 20px;
-            padding: 20px;
-            border-bottom: 1px solid #ddd;
+            padding: 20px; 
+            border: 1px solid #ddd; /* Subtle border to separate sections */
+            border-radius: 10px; /* Rounded corners */
+            background-color: #f7f7f7; /* Light background color */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            transition: all 0.3s ease; /* Smooth transition for hover effects */
+        }
+
+        .experience:hover {
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
         }
 
         .experience h3 {
@@ -67,19 +76,28 @@
         }
 
         footer a {
-            color: white;
+            color: white; 
             text-decoration: none;
+            transition: all 0.3s ease; /* Smooth transition for hover effects */
+        }
+
+        footer a:hover {
+            color: lightgray; /* Change link color on hover */
         }
 
         @media (max-width: 768px) {
             nav ul {
-                flex-direction: column;
+                flex-direction: column; 
                 text-align: center;
+            }
+
+            .hamburger {
+                display: block;
             }
         }
 
         html {
-            scroll-behavior: smooth;
+            scroll-behavior: smooth; 
         }
     </style>
 </head>
@@ -118,7 +136,7 @@
 
     <footer>
         <p>&copy; 2024 Brendan O'Hara</p>
-        <p>Contact: <a href="mailto:brendan@example.com">brendan@example.com</a></p>
+        <p>Contact: brendan dot r dot ohara at gmail.com</p>
         <p>
             <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
             <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer">GitHub</a>
