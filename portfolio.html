@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Brendan O'Hara</title>
+    <meta name="description" content="Portfolio of Brendan O'Hara, showcasing resume, business card, cover letter, and reference list.">
     <style>
         body {
             font-family: Garamond, serif;
@@ -14,7 +15,7 @@
         }
 
         header {
-            background-color: forestgreen; 
+            background-color: forestgreen;
             color: white;
             padding: 10px 0;
             text-align: center;
@@ -42,13 +43,28 @@
             font-size: 18px;
         }
 
-        /* Apply the background image to the green sections */
-        header, footer {
-            background: url('assets/images/20230904_172929.png') no-repeat center center; 
-            background-size: cover; /* Adjusts the image to cover the area */
+        section {
+            padding: 20px;
+        }
+
+        .portfolio-section {
+            background: url('assets/images/continuous_background.png') no-repeat center center;
+            background-size: cover; /* Ensures the image covers the entire section */
+            padding: 20px; /* Consistent with other sections */
+        }
+
+        .portfolio-section h3 {
+            color: forestgreen; /* Consistent with other headings */
+        }
+
+        .portfolio-section p {
+            font-size: 16px;
+            line-height: 1.5;
         }
 
         footer {
+            background-color: forestgreen;
+            color: white;
             text-align: center;
             padding: 10px 0;
         }
@@ -56,10 +72,6 @@
         footer a {
             color: white; 
             text-decoration: none;
-        }
-
-        section {
-            padding: 20px; 
         }
 
         @media (max-width: 768px) {
@@ -89,7 +101,7 @@
         </nav>
     </header>
 
-    <section id="portfolio">
+    <section class="portfolio-section">
         <h2>Portfolio</h2>
         <h3>Resume</h3>
         <p><a href="assets/documents/OHaraResumeFinalDraft.docx" download>Download Resume</a></p>
@@ -110,7 +122,6 @@
         <p>
             <a href="https://www.linkedin.com/in/brendan-r-ohara/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </p>
-        <!-- Background image is applied to the footer -->
     </footer>
 </body>
 </html>
